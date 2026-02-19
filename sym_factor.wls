@@ -77,7 +77,7 @@ symFactor[g_Graph, n_Integer] := Module[
 (*                       Example                           *)
 (* ------------------------------------------------------- *)
 
-myGraph = Graph[
+gExample = Graph[
   {1 <-> 2, 2 <-> 3, 3 <-> 4, 4 <-> 5, 5 <-> 6, 6 <-> 1, 
    2 <-> 5, 6 <-> 3, 7 <-> 1, 8 <-> 4},
   VertexLabels -> "Name"
@@ -86,6 +86,31 @@ gv1 = Graph[
   {1 <-> 2, 1 <-> 2, 1 <-> 2, 3 <-> 1, 2 <-> 4},
   VertexLabels -> "Name"
 ];
+gv2 = Graph[
+  {1 <-> 1, 1 <-> 2, 2 <-> 2, 2 <-> 3, 1 <-> 4},
+  VertexLabels -> "Name"
+];
+gv3 = Graph[
+  {1 <-> 1, 1 <-> 2, 2 <-> 3, 2 <-> 3, 3 <-> 3, 2 <-> 4, 5 <-> 1},
+  VertexLabels -> "Name"
+];
+gv4 = Graph[
+  {1 <-> 3, 3 <-> 2, 2 <-> 1, 3 <-> 3, 2 <-> 2, 1 <-> 4, 1 <-> 5},
+  VertexLabels -> "Name"
+];
+gv5 = Graph[
+  {1 <-> 4, 1 <-> 2, 2 <-> 5, 1 <-> 3, 3 <-> 2, 3 <-> 3},
+  VertexLabels -> "Name"
+];
+gv6 = Graph[
+  {1 <-> 3, 1 <-> 4, 1 <-> 2, 2 <-> 1, 2 <-> 2},
+  VertexLabels -> "Name"
+];
 
-Print["Symmetry factor: ", symFactor[myGraph, 6]];
-Print["Symmetry factor: ", symFactor[gv1, 2]];
+Print["Symmetry factor for gExample: ", symFactor[myGraph, 6]];
+Print["Symmetry factor for gv1: ", symFactor[gv1, 2]];
+Print["Symmetry factor for gv2: ", symFactor[gv2, 2]];
+Print["Symmetry factor for gv3: ", symFactor[gv3, 3]];
+Print["Symmetry factor for gv4: ", symFactor[gv4, 3]];
+Print["Symmetry factor for gv5: ", symFactor[gv5, 3]];
+Print["Symmetry factor for gv6: ", symFactor[gv6, 2]];
