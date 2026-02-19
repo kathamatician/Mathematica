@@ -62,3 +62,8 @@ This approach mirrors standard symmetry-factor calculations in perturbative quan
 - General function interface:
   ```wolfram
   symFactor[g, numberOfInternalVertices]
+
+### File
+
+- `sym_factor.wls`  
+  A standalone WolframScript file that constructs graph adjacency matrices, computes graph automorphisms, and evaluates the symmetry factor of Feynman diagrams given a graph and a specified number of internal vertices.
