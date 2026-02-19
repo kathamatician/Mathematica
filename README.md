@@ -1,6 +1,6 @@
-# Symbolic Calculation in Mathematica
+# Symbolic Computation in Mathematica
 
-**Course:** Symbolic Calculation in Mathematica  
+**Course:** Symbolic Computation in Mathematica  
 **Semester:** Winter Semester 2025/26  
 **Institution:** Ruhr-Universität Bochum
 **Supervisor:** Dr. Arseniy Filin  
