@@ -28,9 +28,8 @@ The implementation avoids built-in simplification shortcuts and instead relies o
 
 - Custom noncommutative product (`myProduct`)
 - Explicit Pauli matrix multiplication rule  
-  \[
+  ```latex
   \sigma_a \sigma_b = \delta_{ab} \mathbf{1} + i \epsilon_{abc} \sigma_c
-  \]
 - Automatic handling of dummy indices
 - Conversion to a canonical form for simplification
 - Pretty-printed output resembling textbook notation
@@ -42,7 +41,7 @@ The implementation avoids built-in simplification shortcuts and instead relies o
 
 ---
 
-## Project 2: Symmetry Factors of Graphs / Feynman Diagrams
+## Project 2: Symmetry Factors of Feynman Diagrams
 
 ### Overview
 
