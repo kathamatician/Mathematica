@@ -73,6 +73,12 @@ symFactor[g_Graph, n_Integer] := Module[
   symmetryFactor
 ];
 
+exportGraph[label_, g_Graph] := Module[{fname},
+  fname = label <> ".pdf";
+  Export[fname, g];
+  Print["Saved graph to ", fname];
+]
+
 (* ------------------------------------------------------- *)
 (*                       Example                           *)
 (* ------------------------------------------------------- *)
@@ -107,10 +113,23 @@ gv6 = Graph[
   VertexLabels -> "Name"
 ];
 
-Print["Symmetry factor for gExample: ", symFactor[myGraph, 6]];
+exportGraph["gExample", gExample];
+Print["Symmetry factor for gExample: ", symFactor[gExample, 6]];
+
+exportGraph["gv1", gv1];
 Print["Symmetry factor for gv1: ", symFactor[gv1, 2]];
+
+exportGraph["gv2", gv2];
 Print["Symmetry factor for gv2: ", symFactor[gv2, 2]];
+
+exportGraph["gv3", gv3];
 Print["Symmetry factor for gv3: ", symFactor[gv3, 3]];
+
+exportGraph["gv4", gv4];
 Print["Symmetry factor for gv4: ", symFactor[gv4, 3]];
+
+exportGraph["gv5", gv5];
 Print["Symmetry factor for gv5: ", symFactor[gv5, 3]];
+
+exportGraph["gv6", gv6];
 Print["Symmetry factor for gv6: ", symFactor[gv6, 2]];
